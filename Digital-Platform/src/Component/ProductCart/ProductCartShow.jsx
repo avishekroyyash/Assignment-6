@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const ProductCartShow = ({item}) => {
-    console.log(item.features)
+const ProductCartShow = ({item,cardData,setcardData}) => {
+    //console.log(item.features)
+    const[isSubscribed,setisSubscribed] = useState(false)
+    const handleSubscription = ()=>{
+     setisSubscribed(true)
+     setcardData([...cardData,item])
+    }
     return (
         <div>
            <div className="card w-96 bg-base-100 shadow-sm justify-center items-center  ">
@@ -30,7 +35,7 @@ const ProductCartShow = ({item}) => {
     }
   
     <div className="mt-6">
-      <button className="btn btn-primary btn-block rounded-2xl">Buy Now</button>
+      <button onClick={handleSubscription} className={`${isSubscribed ? ' bg-green-500': 'btn-primary'} btn  btn-block rounded-2xl`}>{isSubscribed ? 'Add to cart': 'Buy Now'}</button>
     </div>
   </div>
 </div>
