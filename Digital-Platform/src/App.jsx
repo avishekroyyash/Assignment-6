@@ -11,6 +11,7 @@ import ProductCart from './Component/ProductCart/ProductCart'
 import Steps from './Component/Steps/Steps'
 import Workflow from './Component/Workflow/Workflow'
 import AddCard from './Component/AddCard/AddCard'
+ import { ToastContainer} from 'react-toastify';
 
 const product = fetch('Product.json').then(res => res.json())
 
@@ -26,6 +27,7 @@ setActiveTab('card')
 }
   return (
     <>
+       <ToastContainer />
      <Navber cardData={cardData}></Navber>
      <Banner></Banner>
      <Number></Number>

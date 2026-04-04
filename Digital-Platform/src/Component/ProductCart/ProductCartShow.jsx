@@ -1,4 +1,6 @@
+
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
 const ProductCartShow = ({item,cardData,setcardData}) => {
     //console.log(item.features)
@@ -6,6 +8,7 @@ const ProductCartShow = ({item,cardData,setcardData}) => {
     const handleSubscription = ()=>{
      setisSubscribed(true)
      setcardData([...cardData,item])
+     toast.success('add to cart')
     }
     return (
         <div>

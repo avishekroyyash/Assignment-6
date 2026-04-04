@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import AddCardShow from './AddCardShow';
 import AddEmpty from './AddEmpty';
+import { toast } from 'react-toastify';
 
 const AddCard = ({cardData,setcardData}) => {
     const totalPrice = cardData.reduce((sum,item) => sum + item.price,0 );
      const handleDelet = (id)=>{
     //console.log(deletitem,'clicked remove button')
     const filterData = cardData.filter(item => item.id !== id)
+    toast.error('Delete cart')
     setcardData(filterData)
     console.log(filterData) 
    }
@@ -25,7 +27,7 @@ const AddCard = ({cardData,setcardData}) => {
             <p className='font-bold text-2xl'>${totalPrice}</p>
           </div>
            <div className='px-32 py-3'>
-             <button onClick={()=>setcardData([])} className='btn bg-indigo-500 rounded-3xl text-white p-7 w-full '>Proceed to Checkout</button>
+             <button onClick={()=>{setcardData([]);toast.error('delet all cart')}} className='btn bg-indigo-500 rounded-3xl text-white p-7 w-full '>Proceed to Checkout</button>
            </div>
         </div>
     );
