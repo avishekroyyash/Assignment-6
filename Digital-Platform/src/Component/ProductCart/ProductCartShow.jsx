@@ -7,6 +7,12 @@ const ProductCartShow = ({item,cardData,setcardData}) => {
     const[isSubscribed,setisSubscribed] = useState(false)
     const handleSubscription = ()=>{
      setisSubscribed(true)
+     const findData = cardData.find((c) => c.id===item.id)
+     //console.log(findData,'finddata')
+     if(findData){
+      toast('card all ready added');
+      return ;
+     }
      setcardData([...cardData,item])
      toast.success('add to cart')
     }
