@@ -26,7 +26,7 @@ setActiveTab('card')
 }
   return (
     <>
-     <Navber></Navber>
+     <Navber cardData={cardData}></Navber>
      <Banner></Banner>
      <Number></Number>
      <Title></Title>

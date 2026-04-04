@@ -1,7 +1,9 @@
 import React from 'react';
 
-const AddCardShow = ({item}) => {
+const AddCardShow = ({item,handleDelet}) => {
+  
     return (
+      
         <div className='px-30 py-5 '>
         <div className='flex justify-between items-center shadow-xl p-10'>
         <div className='flex items-center justify-center gap-5'>
@@ -13,7 +15,7 @@ const AddCardShow = ({item}) => {
             <p className='text-[#627382]'>${item.price}</p>
             </div>
         </div>
-        <button className='btn bg-red-500 text-white'>Remove</button>
+        <button onClick={()=>handleDelet(item.id)} className='btn bg-red-500 text-white'>Remove</button>
         </div>
           
         </div>
