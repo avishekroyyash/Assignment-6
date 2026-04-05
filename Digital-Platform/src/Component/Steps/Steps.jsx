@@ -4,10 +4,10 @@ import packagepic from '../../Asset/package.png';
 import rocketpic from '../../Asset/rocket.png';
 const Steps = () => {
     return (
-        <div className=' my-10 p-25'>
+        <div className=' md:my-10 md:p-25'>
             <h1 className='text-[48px] text-center font-bold '>Get Started in 3 Steps</h1>
             <p className='text-[16px] text-[#627382] text-center'>Start using premium digital tools in minutes, not hours.</p>
-            <div className='grid grid-cols-3 gap-3 mt-5'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-5'>
             <div className=' shadow-2xl flex flex-col justify-center items-center 
             py-[88px] px-5 rounded-2xl space-y-3 relative '>
                 <div className='bg-indigo-200 p-3 rounded-full'>

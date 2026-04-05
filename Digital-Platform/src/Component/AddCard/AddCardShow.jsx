@@ -4,7 +4,7 @@ const AddCardShow = ({item,handleDelet}) => {
   
     return (
       
-        <div className='px-30 py-5 '>
+        <div className='md:px-30 md:py-5 '>
         <div className='flex justify-between items-center shadow-xl p-10'>
         <div className='flex items-center justify-center gap-5'>
             <div>

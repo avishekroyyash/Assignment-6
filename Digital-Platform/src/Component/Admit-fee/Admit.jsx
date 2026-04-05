@@ -5,7 +5,7 @@ const Admit = () => {
         <div>
             <h1 className='text-[48px] text-center font-bold'>Simple, Transparent Pricing</h1>
             <p className='text-[#627382] text-center'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
-            <div className='grid grid-cols-3 gap-3 p-20'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:p-20'>
             <div className="card  bg-base-100 shadow-sm">
   <div className="card-body">
     <div className="">

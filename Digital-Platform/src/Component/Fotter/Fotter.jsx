@@ -3,7 +3,7 @@ import React from 'react';
 const Fotter = () => {
     return (
         <div className='bg-[#101727]'>
-            <footer className="footer flex justify-around  text-base-content p-20">
+            <footer className="footer md:flex md:justify-around text-base-content p-2 md:p-20">
     <div className='space-y-5'>
         <h1 className='text-[#FFFFFF] text-[40px] font-bold'>DigiTools</h1>
         <p className='text-[#FFFFFF]'>Premium digital tools for creators,<br /> professionals, and businesses. Work smarter <br /> with our suite of powerful tools.</p>
@@ -68,10 +68,10 @@ const Fotter = () => {
     </div>
   </nav>
 </footer>
-<span className='text-[#FFFFFF] max-w-[1300px] block ml-33'>
+<span className='text-[#FFFFFF] md:max-w-[1300px] block md:ml-33'>
 <hr />
 </span>
-<div className='flex justify-between items-center mb-5 px-30 py-10'>
+<div className='flex md:justify-between items-center mb-5 md:px-30 md:py-10'>
   <h2 className='text-[#FFFFFF]'>© 2026 Digitools. All rights reserved.</h2>
 <div className='flex justify-center items-center gap-3'>
   <p className='text-[#FFFFFF]'>PrivacyPolicy</p>
